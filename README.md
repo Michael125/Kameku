@@ -4,8 +4,8 @@ Kameku
 Este es el repo de kameku 
 
 
-Creador
+Autor
 
-Michael Angel
-
+Michael Angel  @michadangelr
+ 
 www.kameku.com
