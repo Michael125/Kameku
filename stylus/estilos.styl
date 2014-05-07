@@ -1,33 +1,44 @@
 @import "normalize.styl"
+@import "font.styl"
 
 verde = #8DB335
+verdec = rgba(141,179,53,.5)
 gris = #5B5B5E
 cafe = #3D382A
+
+kamep = smartk0dregular
+kames-regular = LithosProRegular
+kames-bold = LithosPro850
 
 a 
 	text-decoration none
 body
-	font-size 16px
+	font-size 14px
 	text-align center
-	font-family 'Varela Round', 'sans-serif'
+
 figure
 	margin 0
 //buttons
 .button-menu
+	color    #fff
+	font-size 1em
+	left 1em
+	margin-top -12px
 	position absolute
-	top 50%
-	left .5em
-	margin-top -10px
+	top 55%
+
 .social
+	color #fff
 	float right
-	position absolute
-	top 50%
+	font-size 1.4em
+	margin-right 1.5em
 	margin-top -10px
-	margin-right 1.1em
+	position absolute
 	right .5em
+	top 50%
 	&:nth-child(even)
-		margin-right 0
-	
+		margin-right 0	
+
 .menu
 	display none
 
@@ -35,15 +46,129 @@ figure
 	background-color verde
 	box-shadow 0px 1px 10px gris
 	height 3.5em
-	position relative
 	margin 0
+	position relative
 	.title
-		font-size 1.1em
 		color #fff
-		text-align center
+		font-family kames-bold
+		font-size 1.5em
+		line-height 2.5em
 		margin 0
-		line-height 3.5em
+		text-align center
 
+.box-boton
+	margin-top 20px
 
+.boton
+	background-color verde
+	color cafe
+	font-size 7em
+	padding 20px 0
 
+.boton-busca
+	background-color verde
+	color cafe
+	font-size 1.2em
+	padding 20px 0
+
+.texto-info
+	background-color verdec
+	display none
+	font-family kames-regular
+	margin -10px 0px 
+	padding 20px 50px
+
+.font-s
+	font-family kames-regular
+
+.font-sbold
 	
+	font-family kames-regular
+
+.logo
+	box-shadow verde 0 0 15px
+	margin-top 20px
+
+.text-saludo
+	font-family kames-regular
+	font-size 1.3em
+	padding 20px 0px
+	box-shadow verde 0 0 10px
+	margin-top 15px
+	color verde
+
+.busca
+	background-color verdec
+	padding 15px 10px
+
+.title-busca
+	color gris
+	font-size 2.5em
+
+.text-busca
+	color gris
+	font-family 'Federo'  sans-serif
+	font-size .8em
+	padding 7px 35px
+	& span
+		color blue
+		text-decoration underline
+
+.ancho-b-caja
+	height 50px !important
+
+.b-caja
+	border solid 1px verde !important
+	border-radius 5px;
+	box-shadow verde 1px 2px 10px !important
+	font-family kames-regular !important
+
+.b-enviar
+	background-color verde
+	border-radius 7px
+	box-shadow gris 2px 2px 8px
+	font-family kames-regular
+	margin-top 5px
+	&:hover
+		background-color verdec
+		box-shadow gris 0 0 5px
+		color #000
+
+.footer
+	background-color verde
+	color #fff
+	font-family kames-regular
+	padding 30px 8px
+
+.datos
+	font-size .9em
+
+.pie-pagina
+	font-size .7em
+
+@media screen and (min-width:480px)
+	
+	.logo
+		width 20%
+		margin 10% auto
+		position absolute
+		top 10%
+
+	.text-saludo
+		display none
+
+	.all-botones
+		background-color verdec
+
+	.box-boton
+		width auto
+		display inline-block
+
+	.boton
+		background-color #fff
+		color verde
+
+	.float-r
+		float right
+	.float-l
+		float left	

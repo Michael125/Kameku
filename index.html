@@ -2,13 +2,16 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title> Kameku </title>
 	<link rel="stylesheet" href="css/estilos.css">
-	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Federo' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="foundation/css/foundation.css" />
+    <script src="foundation/js/vendor/modernizr.js"></script>
 </head>
 <body>
 	<header class="header">
-		<a href="" class="button-menu">*</a>
+		<a href="" class="button-menu kame-kamenu"></a>
 		<nav class="menu">
 			<ul class="list">
 				<li class="item">
@@ -36,42 +39,82 @@
 			</ul>
 		</nav>
 		<div class="title">
-			<spam>Menu</spam>
+			<spam>menu</spam>
 		</div>
-			<a href="" class="face social">fa</a>
-			<a href="" class="twi social">tw</a>
+			<a href="" class="face social kame-face"></a>
+			<a href="" class="twi social kame-twi"></a>
 	</header>
-	<section id="principal">
-		<figure id="logo">
-			<img src="img/logo.jpg" alt="Kameku" width="300px" height="300px">
-		</figure>					
-		<article id="fotografia">
-			<div class="boton"></div>
-			<div class="texto-info">
-				<h2>¡ POR QUE AMAMOS LO QUE HACEMOS !</h2>
-				<p>Sabemos que una imagen dice mas que mil palabras, despertar una emoción o recrear un sentimiento para generar una recordación visual por medio de una imagen.</p>		
-			</div>			
-		</article>
-		<article id="web">
-			<div class="boton"></div>
-			<div class="texto-info">
-				<h2>¡ POR QUE AMAMOS LO QUE HACEMOS !</h2>
-				<p>Creamos tu pagina web para que tu marca sea reconocida, generamos una idea que te brinde un espacio unico en la web que refleje las mayores virtudez de tu empresa, esta es la oportunidad de negocio que te brindamos.</p>
-			</div>
-		</article>
-		<article id="contacto">
-			<div class="boton"></div>
-		</article>
-		<article id="clientes">
-			<div class="boton"></div>
-		</article>
-		<article id="diseno">
-			<div class="boton"></div>
-			<div class="texto-info">
-				<h2>¡ POR QUE AMAMOS LO QUE HACEMOS !</h2>
-				<p>Hacemos de tus sueños, nuestros sueños, por ello usando todas las herramientas tecnologicas la creativida e innovacion hacemos tus sueños realidades, plasmando nuestras ideas y haciendolas tuyas, creamos imagen, recordacion, creamos de cada proyecto de nuestros clientes una obra de arte, te sorprendemos con cada idea para poder ofrecerte un servicio exclusivo.</p>
-			</div>
-		</article>
+	<section id="principal">		
+       	<div class="all-botones small">
+		<div class="logo">
+			<figure>
+				<img src="img/logo.jpg" alt="Kameku tu agencia grafica" width="320px" height="320px">
+			</figure>
+		</div>
+		<div class="text-saludo">
+			<span>! Hacemos de tus sueños,<br>nuestros sueños ¡</span>
+		</div>
+			<article id="diseno" class="box-boton float-l">
+				<div class="boton kame-di"></div>
+				<div class="texto-info">
+					<h2 class="font-s">¡ POR QUE AMAMOS LO QUE HACEMOS !</h2>
+					<p>Hacemos de tus sueños, nuestros sueños, por ello usando todas las herramientas tecnologicas la creativida e innovacion hacemos tus sueños realidades, plasmando nuestras ideas y haciendolas tuyas, creamos imagen, recordacion, creamos de cada proyecto de nuestros clientes una obra de arte, te sorprendemos con cada idea para poder ofrecerte un servicio exclusivo.</p>
+				</div>
+			</article>
+			<article id="web" class="box-boton float-r">
+				<div class="boton kame-web"></div>
+				<div class="texto-info">
+					<h2 class="font-s">¡ POR QUE AMAMOS LO QUE HACEMOS !</h2>
+					<p>Creamos tu pagina web para que tu marca sea reconocida, generamos una idea que te brinde un espacio unico en la web que refleje las mayores virtudez de tu empresa, esta es la oportunidad de negocio que te brindamos.</p>
+				</div>
+			</article>
+			<article id="fotografia" class="box-boton float-l">
+				<div class="boton kame-foto"></div>
+				<div class="texto-info">
+					<h2 class="font-s">¡ POR QUE AMAMOS LO QUE HACEMOS !</h2>
+					<p>Sabemos que una imagen dice mas que mil palabras, despertar una emoción o recrear un sentimiento para generar una recordación visual por medio de una imagen.</p>		
+				</div>			
+			</article>
+			<article id="clientes" class="box-boton float-r">
+				<div class="boton kame-clientes"></div>
+			</article>
+			<article id="contacto" class="box-boton">
+				<div class="boton-busca font-s">-------- buscanos aquí --------</div>
+				<div class="busca">
+					<span class="title-busca font-sbold"> escribenos</span>
+					<p class="text-busca font-s">Envianos un mensaje te responderemos en el menor tiempo posible o si lo prefieres envianos un correo a <span>info@kameku.com</span></p>
+					<form action="" class="form-busca">
+						<div class="row small-10">
+							<input class="b-caja ancho-b-caja" type="text" placeholder="nombre" requiered>
+						</div>
+						<div class="row small-10">
+							<input class="b-caja ancho-b-caja" type="email" placeholder="correo" requiered>
+						</div>
+						<div class="row small-10">
+							<input class="b-caja ancho-b-caja" type="tel" placeholder="telefono" requiered>
+						</div>
+						<div class="row small-10">
+							<textarea name="comentario" class="b-caja" id="mensaje" placeholder="mensaje" cols="30" rows="5"></textarea>
+						</div>
+						<button type="submit" class="b-enviar">Buscanos</button>
+					</form>
+
+				</div>
+			</article>
+		</div>
 	</section>
+	<footer>
+		<div class="footer">
+			<span class="datos">Cel.:320 418 5327 - Tel.:(+57) 805 5001 Bogota, Colombia</span>
+			<br>
+			<span class="pie-pagina">Todos los derechos reservados 2014 kameku Bogota,Colombia.</span>
+		</div>
+	</footer>
+	
+	<script src="foundation/js/vendor/jquery.js"></script>
+    <script src="foundation/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
 </body>
 </html>
