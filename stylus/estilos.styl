@@ -13,11 +13,87 @@ kames-bold = LithosPro850
 a 
 	text-decoration none
 body
+	background-color rgba(141,179,53,.2)
 	font-size 14px
+	overflow-y hidden 
 	text-align center
 
 figure
 	margin 0
+
+
+// clses generales
+
+.img-web
+	background-image url(../img/base/all.png)
+	background-position 0px 0px
+	background-repeat no-repeat
+	background-size 100%
+	height 179px
+	margin 0 auto
+	position relative
+	top -50px
+	width 315px
+
+.img-diseno
+	background-image url(../img/base/all.png)
+	background-position 0px -352px
+	background-repeat no-repeat
+	background-size 100%
+	height 178px
+	margin 0 auto
+	position relative
+	top -50px
+	width 315px	
+
+.img-foto
+	background-image url(../img/base/all.png)
+	background-position 0px -530px
+	background-repeat no-repeat
+	background-size 100%
+	height 178px
+	margin 0 auto
+	position relative
+	top -50px
+	width 315px
+
+.img-clientes
+	background-image url(../img/base/all.png)
+	background-position 0px -177px
+	background-repeat no-repeat
+	background-size 100%
+	height 177px
+	margin 0 auto
+	position relative
+	top -50px
+	width 315px			
+
+.mas-info
+	background-color verde
+	width auto
+	padding .4em 2em
+	border-radius 7px
+	color #fff
+	box-shadow rgba(0,0,0,.5) 0px 2px 8px
+
+
+
+.visible
+	display block 
+
+.font-s
+	font-family kames-regular
+
+.font-sbold	
+	font-family kames-regular
+
+.margen-sup
+	margin-top 115px !important	
+
+.margen-inf
+	margin-bottom 15px	!important
+
+
 //buttons
 .button-menu
 	color    #fff
@@ -57,13 +133,12 @@ figure
 		text-align center
 
 .box-boton
-	margin-top 20px
+	margin-top 80px
 
 .boton
 	background-color verde
-	color cafe
-	font-size 7em
-	padding 20px 0
+	width auto
+	height 80px
 
 .boton-busca
 	background-color verde
@@ -76,21 +151,17 @@ figure
 	display none
 	font-family kames-regular
 	margin -10px 0px 
-	padding 20px 50px
-
-.font-s
-	font-family kames-regular
-
-.font-sbold
-	
-	font-family kames-regular
+	padding 80px 20px 50px 20px
+	box-shadow verde 0 0 15px
 
 .logo
 	box-shadow verde 0 0 15px
 	margin-top 20px
+	background-color #fff
 
 .text-saludo
 	font-family kames-regular
+	background-color #fff
 	font-size 1.3em
 	padding 20px 0px
 	box-shadow verde 0 0 10px
@@ -99,7 +170,7 @@ figure
 
 .busca
 	background-color verdec
-	padding 15px 10px
+	padding 15px 10px 45px 10px
 
 .title-busca
 	color gris
@@ -122,6 +193,9 @@ figure
 	border-radius 5px;
 	box-shadow verde 1px 2px 10px !important
 	font-family kames-regular !important
+	margin .4em
+	padding-left 1em
+	width 20em
 
 .b-enviar
 	background-color verde
@@ -129,6 +203,10 @@ figure
 	box-shadow gris 2px 2px 8px
 	font-family kames-regular
 	margin-top 5px
+	padding .5em 1.5em
+	color #fff
+	font-size 1.2em
+	border solid verde 1px 
 	&:hover
 		background-color verdec
 		box-shadow gris 0 0 5px
@@ -146,29 +224,3 @@ figure
 .pie-pagina
 	font-size .7em
 
-@media screen and (min-width:480px)
-	
-	.logo
-		width 20%
-		margin 10% auto
-		position absolute
-		top 10%
-
-	.text-saludo
-		display none
-
-	.all-botones
-		background-color verdec
-
-	.box-boton
-		width auto
-		display inline-block
-
-	.boton
-		background-color #fff
-		color verde
-
-	.float-r
-		float right
-	.float-l
-		float left	
